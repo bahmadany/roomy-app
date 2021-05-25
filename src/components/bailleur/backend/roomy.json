@@ -1,0 +1,82 @@
+{
+   "location":{
+	"nom_bayeur1":[
+	{
+		"ID_location":"",
+		"Type" :"appartement",
+		"Nbre_appart":6,
+		"Prix":1000,
+		"Ville":"Oujda",
+		"Quartier":"Al Quods",
+		"Addresse":"Oujda Al Quods Rue Ibn Batouta",
+		"Meuble":true,
+		"PhotoName":"photo1.png"
+		
+			    },
+	{
+		"ID_location":"",
+		"Type" :"Chambre",
+		"Prix":1000,
+		"Ville":"Oujda",
+		"Quartier":"Al Quods",
+		"Addresse":"Oujda Al Quods Rue Ibn Batoud",
+		"Meuble":true,
+		"PhotoName":"photo1.png"
+	}
+                
+              ],
+
+   "nom_bayeur2":[
+	{
+		"ID_location":"",
+		"Type" :"appartement",
+		"Nbre_appart":6,
+		"Prix":1000,
+		"Ville":"Oujda",
+		"Quartier":"Al Quods",
+		"Addresse":"Oujda Al Quods Rue Ibn Batouta",
+		"Meuble":true,
+		"PhotoName":"photo1.png"
+		
+			    },
+	{
+		"ID_location":"",
+		"Type" :"Chambre",
+		"Prix":1000,
+		"Ville":"Oujda",
+		"Quartier":"Al Quods",
+		"Addresse":"Oujda Al Quods Rue Ibn Batoud",
+		"Meuble":true,
+		"PhotoName":"photo1.png"
+	}
+                
+              ]
+		},
+
+    "users" :{
+           "bayeurs":[ 
+  	         	{   	      "nom_nayeur1":"",
+				      "Mail":"bayeur1@gmail.com",
+				      "Password":"mot_de_passe"
+				 },
+			{
+				       "nom_bayeur2":"",
+				       "Mail":"bayeur2@gmail.com",
+				       "Password":"mot_de_passe"
+				}
+                     ],  
+         
+            "clients":[
+				{     "nom_client1":"",
+				      "Mail":"client1@gmail.com",
+				      "Password":"mot_de_passe"
+				 },
+
+			 	{
+				       "nom_client2":"",
+				       "Mail":"client2@gmail.com",
+				       "Password":"mot_de_passe"
+				}
+		]
+            }
+}

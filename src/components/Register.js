@@ -1,11 +1,29 @@
-import React, { Component } from "react";
+import React, {Component } from "react";
 import { NavLink } from "react-router-dom";
 import GgLogin from './component_login_register/FbLogin';
 import FbLogin from './component_login_register/GgLogin';
+import firebase from "./firebase";
 
 
 export default class SignUp extends Component {
-    
+    constructor(props){
+        super(props);
+        this.state = {
+            mailuser : 'testmailuser',
+            password : 'testpass'
+        };
+    }
+
+    handleregister = () => {
+        const dbuserref = firebase.database().ref('users').child('clients/');
+        const user = {
+            mail : this.state.mailuser,
+            password : this.state.password
+        };
+        dbuserref.push(user);
+        console.log("hreree");
+    }
+
     render() {
         return (
             <>
@@ -24,7 +42,7 @@ export default class SignUp extends Component {
             <br/>
             <form className="row g-3">
                 <div className="col-md-12">
-                    <label for="inputName" className="form-label">FristName</label>
+                    <label for="inputName" className="form-label">FirstName</label>
                     <input type="text" className="form-control" id="inputName"/>
                 </div>
                 <div className="col-md-12">
@@ -54,7 +72,7 @@ export default class SignUp extends Component {
                     </div>
                 </div>
                 <div className="col-12">
-                    <button type="submit" className="btn btn-primary">Inscrivez-vous</button>
+                    <button type="submit" onClick = { (event) => {this.handleregister();}} className="btn btn-primary">Inscrivez-vous</button>
                 </div>
       </form>
       </>
